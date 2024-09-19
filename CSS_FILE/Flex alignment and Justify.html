@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Alignment and Justify</title>
+    <style>
+        #container{
+            background-color: #555;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: 
+            ->Align items Horizontally*/
+            justify-content: center;
+            
+           /* 
+            Options:
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+           */
+           
+           
+           /* align-item:
+            ->Align items Vertically (a height must be given ) */
+           height: 600px;
+           align-items:stretch ;
+           /* 
+           options:
+           align-items:flex-start ; 
+           align-items:flex-end ;
+           align-items:center ;
+           align-items:stretch ; */
+           
+        
+           /* align-content:
+             -> Align items vertically where extra Space */
+           align-content: flex-end; 
+            
+           /* Options:
+           align-content:flex-start ; 
+           align-content: flex-end; 
+           align-content: center;
+           align-content: space-between;
+           align-content: space-around;
+           align-content: stretch; */
+            
+        }
+        .item1{
+            order: 1;
+
+        }
+        .item2{
+            /*Align single item Vertcal*/
+            
+            align-self: center;
+
+             /* Options:
+            Align single item Vertically
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+             align-self: stretch; */
+             order: 2;
+        }
+
+        .item3{
+            order: 1;
+
+        }
+        .item{
+            background-color: #f4f4f4;
+            border: #ccc solid 1px;
+            padding: 1rem;
+            text-align: center;
+            margin: 0.5rem;
+            flex: basis 100px ;
+             
+            align-self: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item item1"><h3>Item-1</h3></div>
+        <div class="item item2"><h3>Item-2</h3></div>
+        <div class="item item3"><h3>Item-3</h3></div>
+           <!-- <div class="item item4"><h3>Item-4</h3></div>
+        <div class="item item5"><h3>Item-5</h3></div>
+        <div class="item item6"><h3>Item-6</h3></div>
+        <div class="item item7"><h3>Item-7</h3></div>
+        <div class="item item8"><h3>Item-8</h3></div>
+        <div class="item item9"><h3>Item-9</h3></div>
+        <div class="item item10"><h3>Item-10</h3></div>
+        <div class="item item11"><h3>Item-11</h3></div>
+        <div class="item item12"><h3>Item-12</h3></div> -->
+     
+    </div>
+</body>
+</html>

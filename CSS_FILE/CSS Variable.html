@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Variable</title>
+    <style>
+        /* CSS Variable */
+         /*root scope is used to declare the variable which can be accessed throughout the CSS code*/
+        :root{
+            --max-width:1100px;
+            --light-color:#ccc;
+            --primary-color:steelblue;
+            --secondary-color:skyblue;
+        }
+        .box{
+            --box-1-width:3;
+            --box-2-width:2;
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            /* Generally CSS Variable declared in Root scope but here outside the root scope declared */
+            /* --light-color:#ccc; */
+            background:var(--light-color);
+
+        }
+        header{
+            background-color: var(--primary-color);
+            border-bottom: 5px solid var(--secondary-color);
+            text-align: center;
+            color: #fff;
+
+        }
+        .container{
+            display:flex;
+            margin: auto;
+            max-width:var(--max-width) ;
+        }
+        .box{
+            background-color: var(--primary-color);
+            border-bottom: var(--secondary-color);
+            color: #fff;
+            padding: 1rem;
+            margin: 1rem;
+
+        }
+        .box-1{
+            flex: var(--box-1-width);
+        }
+        .box-2{
+            flex: var(--box-2-width);
+        }
+    </style>
+</head>
+<body>
+    <header><h1>NS_Engineer_Sathi</h1></header>
+    <div class="container">
+        <div class="box box1">
+            <h3>Welcome To NS_Engineer_Sathi</h3>
+            <p>"Welcome to our channel, where we provide expert insights on engineering solutions, material innovations, and practical strategies to tackle real-world engineering challenges. Join us as we explore cutting-edge technologies and problem-solving techniques that drive success in the engineering world!"</p>
+        </div>
+        <div class="box box2">
+            <h3>About</h3>
+            <p>At NS Engineer Sathi, we understand the complexities and challenges faced by engineers in today’s fast-paced world. Our channel is dedicated to providing you with expert insights, practical solutions, and cutting-edge information that can help you excel in your engineering journey.</p>
+        </div>
+    </div>
+</body>
+</html>

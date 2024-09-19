@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            padding: 1rem;
+            margin: 1rem;
+            background: coral;
+            color: #fff;
+            /* Box-Shadow_5-Types */
+            /* 1-> offset-x| offset-y| color */
+            box-shadow: 10px 10px teal;
+            /* 2->offset-x| offset-y| blur-radius|color */
+            box-shadow:10px 10px 20px teal ;
+            /* 3->offset-x| offset-y| blur-radius|spread-radius|color */
+            box-shadow: 10px 10px 20px 1px rgba(0,0,0,3);
+            /* 4->inset| offset-x| offset-y|color */
+            box-shadow: inset -3px -3px teal;
+            /* 5->Multiple Shadow*/
+            box-shadow: 3px 3px 20px teal ,-3px -3px 20px olive;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Welcome To NS_Engineer_Sathi</h3>
+            <p>"Welcome to our channel, where we provide expert insights on engineering solutions, material innovations, and practical strategies to tackle real-world engineering challenges. Join us as we explore cutting-edge technologies and problem-solving techniques that drive success in the engineering world!"</p>
+        </div>
+        <div class="box">
+            <h3>Welcome To NS_Engineer_Sathi</h3>
+            <p>"Welcome to our channel, where we provide expert insights on engineering solutions, material innovations, and practical strategies to tackle real-world engineering challenges. Join us as we explore cutting-edge technologies and problem-solving techniques that drive success in the engineering world!"</p>
+        </div>
+        <div class="box">
+            <h3>Welcome To NS_Engineer_Sathi</h3>
+            <p>"Welcome to our channel, where we provide expert insights on engineering solutions, material innovations, and practical strategies to tackle real-world engineering challenges. Join us as we explore cutting-edge technologies and problem-solving techniques that drive success in the engineering world!"</p>
+        </div>
+    </div>
+</body>
+</html>

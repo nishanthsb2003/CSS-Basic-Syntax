@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transform Property</title>
+    < <style>
+        body{
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .box{
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            /* transform:rotate(25deg); 
+            transform:skew(25deg);
+            transform:scale(2);  */
+
+            transform:all 1s ease-in-out;
+
+
+
+        }
+        .box:hover{
+            /* transform:rotate(180deg);
+            transform:skew(25deg);
+            transform:scale(2);  */
+            transform:translateY(-100px);/* only y axix movement*/
+            transform:translateX(-100px);/* only x axix movement*/
+            transform:translate(100px,100px);
+            transform:translate3d(100px,100p,100px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

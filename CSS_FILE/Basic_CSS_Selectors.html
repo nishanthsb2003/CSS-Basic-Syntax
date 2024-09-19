@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic CSS Selectors</title>
+    <style>
+        /* Using Tags */
+        div{
+            color:black;
+            background-color:#f4f4f4;
+        }
+        h2{
+            color: red;
+        }
+
+        /* Using Id names*/
+        #welcome{
+            background-color: grey;
+
+        }
+
+        /* Using Class*/
+        .heading{
+            color: black;
+            background-color: #f4f4f4 ;
+            text-align: center;
+        }
+
+        /* Multiple Selectors */
+        #welcome,#about{
+            border: 1px solid black;
+        }
+
+        /* Nested Selector */
+        #welcome p{
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">NS_ENGINEER_SATHI</h1>
+    <div id="welcome">
+        <h2>Welcome</h2>
+        <p>"Welcome to our channel, where we provide expert insights on engineering solutions, material innovations, and practical strategies to tackle real-world engineering challenges. Join us as we explore cutting-edge technologies and problem-solving techniques that drive success in the engineering world!"</p>
+    </div>
+
+    <div id="about">
+        <h2>About</h2>
+        <p>At NS Engineer Sathi, we understand the complexities and challenges faced by engineers in today’s fast-paced world. Our channel is dedicated to providing you with expert insights, practical solutions, and cutting-edge information that can help you excel in your engineering journey.</p>
+     </div>
+
+</body>
+</html>

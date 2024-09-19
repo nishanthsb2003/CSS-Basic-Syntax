@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KeyFrames_1</title>
+    <style>
+        body{
+            background: #333;
+        }
+        .box{
+            background: white;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            /* animation-name: animate1;
+            animation-duration: 5s;
+            animation-iteration-count:2;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-timing-function:ease-in-out; */
+            animation: animate1 5s forwards 1s ease-in-out;
+        }
+        
+            @keyframes animate1{
+            from{
+                top: 0;
+                width: 200px;
+                background-color: green;
+            }
+            to{
+                top: 300px;
+                width: 600px;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
